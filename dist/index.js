@@ -8,4 +8,3 @@ const port = Number(process.env.PORT || 3000);
 _server_1.default.listen(port, () => {
     Logger_1.default.info('Express server started on port: ' + port);
 });
-//# sourceMappingURL=index.js.map

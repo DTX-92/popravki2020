@@ -2,7 +2,7 @@
    "name": "popravki2020",
    "version": "0.0.0",
    "scripts": {
-      "build": "node ./util/build.js",
+      "build": "node ./build.js",
       "build2": "tsc --build tsconfig.prod.json",
       "lint": "tslint --project \"tsconfig.json\"",
       "start:prod": "node -r module-alias/register ./dist",

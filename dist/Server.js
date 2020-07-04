@@ -38,9 +38,12 @@ const staticDir = path_1.default.join(__dirname, 'public');
 app.use(express_1.default.static(staticDir));
 app.get('*', (req, res) => {
     let ip = (req.headers['x-forwarded-for'] || req.connection.remoteAddress);
-    Request_1.requestDao.log(ip);
-    console.log('hello');
-    res.sendFile('index.html', { root: viewsDir });
+    if (req.path === '/') {
+        Request_1.requestDao.log(ip);
+        console.log('hello');
+        res.sendFile('index.html', { root: viewsDir });
+    }
+    else
+        res.status(404).send();
 });
 exports.default = app;
-//# sourceMappingURL=Server.js.map

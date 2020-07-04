@@ -33,4 +33,3 @@ else {
     logger.add(consoleTransport);
 }
 exports.default = logger;
-//# sourceMappingURL=Logger.js.map

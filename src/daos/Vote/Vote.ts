@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document } from 'mongoose'
-import { hash5 } from '@src/shared/functions'
+import { hash5 } from '@shared/functions'
 
 const VoteSchema: Schema = new Schema({
    ipHash: { type: String },

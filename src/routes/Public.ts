@@ -4,7 +4,7 @@ import { ParamsDictionary } from 'express-serve-static-core'
 
 import { paramMissingError } from '@shared/constants'
 
-import RequestModel from '@src/daos/Request/Request'
+import RequestModel from '@daos/Request/Request'
 import VoteModel, { voteDao } from '@daos/Vote/Vote'
 import crypto from 'crypto'
 
