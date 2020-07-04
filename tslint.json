@@ -1,0 +1,13 @@
+{
+   "extends": "tslint:recommended",
+   "rules": {
+      "TS7006": false,
+      "member-ordering": false,
+      "object-literal-sort-keys": false,
+      "ordered-imports": false,
+      "quotemark": [true, "backtick"]
+   },
+   "linterOptions": {
+      "exclude": ["./node_modules/**"]
+   }
+}

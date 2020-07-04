@@ -1,0 +1,12 @@
+/* body {
+   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+} */
+.vote-form {
+   max-width: 420px;
+   margin: 0 auto;
+}
+
+.group-interval {
+   display: inline-block;
+   width: 70px;
+}
